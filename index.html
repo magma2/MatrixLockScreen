@@ -1,19 +1,37 @@
-<html>
+<html ng-app="ntk">
     <head>
        <title>Matrix Lock Screen</title>
        <link href="style/site.css" rel="stylesheet"/>
     </head>
-    <body>
+    <body ng-controller="screenWatch">
 
+        <!-- 1. Lock Screen -->
+       <div id="lockscreen" ng-show="isIdle()" ng-cloak>
 
-
+            <canvas width="500" height="300" id="canvas" drawing> </canvas>
+            <!--2. show on lock screen -->
+            <div id="lockscreen-content">
+                <img src="images/user0.png" />
+                <span>SongPA</span>
+                <input id="txt" type="password" placeholder="Password" style="width:180px;height:32px;" />
+                <input id="btnUnlock" class="btn-sm btn-primary" 
+                       type="button" value="Unlock"  ng-click="signIn()"
+                       style="width:180px;margin-top:4px;" />
+            </div>
+       </div>
+        
+        <!-- Content -->
         <div class="content">
             <h1>Matrix Lock Screen by AngularJS</h1>
-            <img src="images/AngularJS.jpg" width="400px" />
+            <br/><br/>
+            <img src="images/AngularJS.jpg" width="250px" />
+            <br/>
+            <br/>
+            
         </div>
 
 
-        <script src="scripts/angular.js" /> 
-        <script src="app.js" /> 
+        <script src="scripts/angular.js"></script>
+        <script src="app.js"></script> 
     </body>
 </html>

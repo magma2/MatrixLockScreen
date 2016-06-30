@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
 }
-
 html{
     
     height:100%;
@@ -18,4 +17,58 @@ body {
 .content{
     text-align: center;
     margin-top: 100px;
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none;
+}
+/* lock screen style */
+#lockscreen {
+    position: fixed; 
+    height: 100%; 
+    top: 0;left: 0; 
+    width: 100%; 
+    background-color:#010d31;
+    z-index:999998;
+    opacity: 0.8;
+    filter: alpha(opacity=90);
+}
+
+#lockscreen-content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:inline-block;
+    margin:auto; 
+    z-index:999999;
+    color:white;
+    
+}
+
+#lockscreen-content img{
+    height:90px;
+    border-radius:50%;
+    border:3px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    cursor:pointer;
+    
+}
+#lockscreen-content input{
+    border-radius:3px;
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+    height: 28px;
+}
+
+#lockscreen-content span{
+    font-size:24px;
+    display: block;
+    margin: 0 auto;
+    text-align:center;
 }
