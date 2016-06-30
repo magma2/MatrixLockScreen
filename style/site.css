@@ -1,0 +1,21 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html{
+    
+    height:100%;
+    width:100%;
+}
+body {
+    background-color:#e7ebf0;
+    padding-left:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-right:0px;
+}
+.content{
+    text-align: center;
+    margin-top: 100px;
+}
